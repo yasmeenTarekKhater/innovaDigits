@@ -1,0 +1,45 @@
+*{
+    font-family: myFont;
+    src: url(../fonts/Yellix-Thin.ttf);
+}
+/* --------------------- Nav bar styles------------------- */
+.navbar a{
+    color: white !important;
+}
+.navbar a.active{
+    color: var(--content-accent-ligthblue) !important;
+}
+.navbar .dropdown-menu a{
+   color: black !important;
+   transition: 0.7s;
+}
+.navbar .dropdown-menu a:hover{
+    background-color: inherit;
+    color: var(--content-accent-purble) !important;
+    font-weight: bolder;
+}
+.navbar img{
+   width: 170px;
+   margin-top: 5px;
+}
+@media(max-width:365px) {
+    .navbar img{
+        width:100px;
+    }
+}
+.navbar-collapse ul li{
+    padding: 0 3px;
+}
+.navbar button{
+    color: var(--base-color);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 7px 16px;
+    background-color: var(--content-accent-ligthblue);
+    border-radius: 8px;
+}
+.navbar button:hover{
+    border: 1px solid white;
+    background-color: transparent;
+}
+/* ---------------------End Nav bar styles------------------- */
