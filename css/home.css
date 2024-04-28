@@ -1,8 +1,15 @@
-*{
-    font-family: myFont;
-    src: url(../fonts/Yellix-Thin.ttf);
+/* -----------first section style------------ */
+.nav-header{
+    position: relative;
+    background: rgb(97,0,221);
+    background: linear-gradient(220deg, var(--background-secondary-gradient) 0%,
+    var(--background-primary-gradient) 90%);
 }
 /* --------------------- Nav bar styles------------------- */
+.navbar{
+    position: absolute;
+    width: 100%;
+}
 .navbar a{
     color: white !important;
 }
@@ -27,8 +34,19 @@
         width:100px;
     }
 }
+@media(max-width:992px) {
+    .navbar-collapse{
+        background-color: rgba(31, 30, 30, 0.308);
+        padding: 10px;
+        border-radius: 15px;
+        margin-top: 10px;
+        }
+}
 .navbar-collapse ul li{
     padding: 0 3px;
+}
+.navbar-toggler{
+    background-color: transparent !important;
 }
 .navbar button{
     color: var(--base-color);
@@ -38,8 +56,79 @@
     background-color: var(--content-accent-ligthblue);
     border-radius: 8px;
 }
-.navbar button:hover{
+.navbar button:hover,.header-btn:hover{
     border: 1px solid white;
     background-color: transparent;
 }
 /* ---------------------End Nav bar styles------------------- */
+
+/* ---------------------header styles------------------- */
+.my-header{
+    padding-top: 130px;
+}
+.person-one-header img{
+    width: 77px;
+    height: 77px;
+}
+.ai-image img{
+    width: 340px;
+}
+.my-header h1{
+    font-family: myFont;
+    font-size: 60px;
+}
+.my-header p{
+    font-size: 20px;
+}
+
+@media (max-width:359px){
+    .ai-image img{
+        width: 200px;
+    }
+    .my-header h1{
+        font-size: 15vw;
+    }
+    .my-header p{
+        font-size: 15px;
+    }
+}
+.my-header h1 span{
+    color: var(--content-accent-ligthblue);
+}
+.my-header h1,.my-header p{
+    color: white;
+}
+.people-two-header img{
+    width: 108px;
+    height: 108px;
+}
+.header-btn{
+    width: 200px;
+    height: 57px;
+    background-color: white;
+    color: var(--base-color);
+    border-radius: 16px;
+    font-weight: 600;
+    font-family: myFont;
+}
+.header-languages{
+    font-size: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.267);
+    background-color: rgba(255, 255, 255, 0.418);
+    border-radius: 16px;
+    padding: 20px;
+}
+.header-languages img{
+    margin-right: 3px;
+}
+.form-check-input{
+    width: 28px;
+    height: 18px;
+}
+.form-check-input:checked{
+    background-color: var(--content-accent-purble) !important;
+}
+.my-header hr{
+    color: white;
+}
+/* ---------------------End header styles------------------- */

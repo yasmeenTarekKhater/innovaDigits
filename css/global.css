@@ -9,3 +9,10 @@
     --div-background-ligthblue:#00C9BD;
     --icons-border-color:#F2F4F7;
 }
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: myFont;
+    src: url(../fonts/Yellix-ExtraBold.ttf);
+}

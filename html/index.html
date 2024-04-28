@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!----------- styles links --------->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/colors.css" />
+    <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/home.css" />
     <!------------ javascript links --------->
     <script defer src="../js/bootstrap.bundle.min.js"></script>
@@ -14,9 +14,10 @@
     <title>Mashoura</title>
   </head>
   <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-danger px-0 px-lg-5 py-4">
+    <section class="nav-header mb-3 ">
+        <nav class="navbar navbar-expand-lg navbar-light px-0 px-lg-5 py-4">
                 <div class="container-fluid ">
-                  <a class="navbar-brand" href="#">
+                  <a class="navbar-brand ms-3" href="#">
                     <img src="../assets/images/logo.png" alt="logo" />
                   </a>
                   <button
@@ -80,14 +81,71 @@
                         </ul>
                       </li>
                     </ul>
-                    <button class="btn" type="submit">
+                    <button class="btn me-lg-5" type="submit">
                         Get Started
                       </button>
                   </div>
                 </div>
         </nav>
-        <header>
-          hi
+        <header class="container my-header">
+          <div class="row justify-content-center justify-content-sm-between">
+            <div class=" col-7 col-sm-3 text-center text-sm-end  person-one-header">
+              <img  src="../assets/images/personone.png" alt="personone">
+            </div>
+            <div class=" col-12 col-sm-8 text-center text-sm-end ai-image">
+              <img src="../assets/images/ai.png" alt="ai">
+            </div>
+          </div>
+          <div class="row justify-content-center justify-content-sm-between">
+            <div class="col-11 col-md-10">
+              <h1>When a Survey Tool <br/> Connecting <span>People</span> Dots ..</h1>
+              <p class="mt-3">Collects and analyzes responses from participants to gather valuable insights</p>
+            </div>
+            <div class="col-12 col-md-2 align-self-end people-two-header text-end">
+              <img src="../assets/images/persontwo.png" alt="persontwo"/>
+            </div>
+          </div>
+          <div class="row justify-content-center justify-content-sm-between mt-5">
+            <button class="col-3 col-md-3 btn header-btn">Get Started</button>
+            <div class=" col-7 col-md-4 my-3 my-md-0 text-start text-sm-center  person-three-header">
+              <img src="../assets/images/personthree.png" alt="personthree"/>
+            </div>
+            <div class="col-8 col-sm-5 col-md-4 col-lg-3 col-xl-2 me-0 me-md-5 header-languages">
+               <div class="row">
+                <div class="col-7 col-lg-8">
+                  <img src="../assets/icons/saudi-arabia.png" alt="العربيه">
+                  <span>العربيه</span>
+                </div>
+                <div class="col-3 form-check form-switch">
+                    <input class="form-check-input" checked type="checkbox" id="flexSwitchCheckDefault">
+                </div>
+               </div>
+               <hr/>
+               <div class="row">
+                <div class="col-7 col-lg-8">
+                  <img src="../assets/icons/united-states-of-america.png" alt="ُEnglish">
+                  <span>ُEnglish</span>
+                </div>
+                <div class="col-3 form-check form-switch">
+                    <input class="form-check-input" checked type="checkbox" id="flexSwitchCheckDefault">
+                </div>
+               </div>
+               <hr/>
+               <div class="row">
+                <div class="col-7 col-lg-8">
+                  <img src="../assets/icons/france.png" alt="france">
+                  <span>France</span>
+                </div>
+                <div class="col-3 form-check form-switch">
+                    <input class="form-check-input"type="checkbox" id="flexSwitchCheckDefault">
+                </div>
+               </div>
+            </div>
+          </div>
         </header>
+    </section>
+    <section class="">
+      hi
+    </section>
   </body>
 </html>
