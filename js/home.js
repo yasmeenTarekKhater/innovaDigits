@@ -23,3 +23,15 @@ links.forEach((link, index) => {
     });
   });
 //----------End changing features image on hover links---------------------------------------------
+
+//----------rigth side magical circle section animation---------------------------------------------
+
+const magicCircleContainer=document.querySelector(".magical-circle-rigth");
+const magicCircleIcon=document.querySelector(".magical-circle-icons");
+const magicCircleImage=document.querySelector(".magical-circle-img");
+
+magicCircleContainer.addEventListener('click',()=>{
+      magicCircleIcon.classList.toggle("magical-circle-icons-left");
+      magicCircleImage.classList.toggle("magical-circle-img-rigth");
+});
+//---------- End rigth side magical circle section animation---------------------------------------------

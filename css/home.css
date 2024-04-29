@@ -198,3 +198,121 @@
     color: white;
 }
 /* ---------------------End header styles------------------- */
+
+/* ---------------------Magical circle styles------------------- */
+/* ##### left side */
+.magical-circle{
+    margin-top: 90px;
+}
+.magical-circle h1{
+   font-family: myfont;
+   font-weight: 900;
+   font-size: 60px;
+   line-height: 63px;
+   color: var(--base-color);
+}
+.magical-circle h1 span{
+    color: var(--content-accent-purble);
+}
+.magical-circle p{
+   margin: 30px 0 0 5px;
+   color: var(--paragraph-color-grayish);
+   font-size: 18px;
+}
+.magical-circle button{
+    background-color: var(--content-accent-purble);
+    color: white;
+    border-radius: 11px;
+    font-weight: 600;
+    padding: 14px 60px 14px 60px;
+    margin-top: 30px;
+}
+.magical-circle button:hover{
+    background-color: transparent;
+    border: 1px solid var(--base-color);
+}
+/* ##### rigth side */
+.magical-circle-rigth{
+    height: 420px;
+    border-radius: 15px;
+    background-image: url(../assets/images/nbackground.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    margin-bottom: 100px;
+    position: relative;
+    cursor: pointer;
+}
+.rating-scale{
+    height: 150px;
+    width: 160px;
+    position: absolute;
+    left: -70px;
+    top: 30px;
+}
+.magical-circle-rigth-content{
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 473px;
+    margin-left: -9px;
+}
+.magical-circle-icons{
+    transition: 1s;
+}
+.magical-circle-icons .net-score{
+    height: 130px;
+    width: 170px;
+    position: absolute;
+    top: 160px;
+    left: 30px;
+}
+.magical-circle-icons .text-answer{
+    height: 130px;
+    width: 160px;
+    position: absolute;
+    top:280px;
+}
+.magical-circle-img{
+    height: 90%;
+    width: 57%;
+    position: absolute;
+    top: 4%;
+    right: 0;
+    border-radius: 15px;
+    transition: 1s;
+}
+.magical-circle-icons-left{
+    transition: 1s;
+    transform: translate(-200px);
+}
+.magical-circle-img-rigth{
+    transition: 1s;
+    transform: translate(400px) rotate(120deg);
+}
+/* --------------------- End Magical circle styles------------------- */
+
+/* --------------------- Key Features section styles------------------- */
+.key-features{
+    background: var(--base-color) url(../assets/images/Vectornkey.png) no-repeat bottom right;
+    background-size: 600px;
+    color: white;
+}
+.key-features-items div{
+    border-radius: 15px;
+    padding:0 10px 10px 10px;
+    background-color:rgba(145, 145, 145, 0.1);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+.key-features-items div img{
+    width: 100%;
+    height: 120px;
+    margin-bottom: 40px;
+}
+.key-features-items .color-img{
+    border-radius: 15px;
+    width: 110%;
+    height: 160px;
+    margin:0 0 0 -10px;
+}
+/* --------------------- End Key Features section styles------------------- */
