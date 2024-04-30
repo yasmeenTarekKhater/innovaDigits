@@ -30,8 +30,31 @@ const magicCircleContainer=document.querySelector(".magical-circle-rigth");
 const magicCircleIcon=document.querySelector(".magical-circle-icons");
 const magicCircleImage=document.querySelector(".magical-circle-img");
 
+// add event click on magicCircle div
 magicCircleContainer.addEventListener('click',()=>{
+      //add and remove class
       magicCircleIcon.classList.toggle("magical-circle-icons-left");
       magicCircleImage.classList.toggle("magical-circle-img-rigth");
 });
 //---------- End rigth side magical circle section animation---------------------------------------------
+
+
+//-------------------- Question progress bar animation-------------------
+
+const progressBar=document.querySelector(".progress-bar-colors");
+const progressBarEmoji=document.querySelector(".progress-bar-emoji");
+const progressBarColors= Array.from(document.querySelectorAll(".progress-bar-colors div"));
+const progressBarColorsClasses=["progress-bar-red-animation","progress-bar-yellow-animation","progress-bar-green-animation"];
+
+// add event click on progress bar to handle showing emojis and colors
+progressBar.addEventListener('click',()=>{
+
+    progressBarEmoji.classList.add("progress-bar-emoji-animation");
+    progressBarColors.forEach((color,index)=>{
+      color.classList.add(progressBarColorsClasses[index]);
+    });
+    
+});
+
+
+//-------------------- End Question progress bar animation-------------------

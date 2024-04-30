@@ -316,3 +316,96 @@
     margin:0 0 0 -10px;
 }
 /* --------------------- End Key Features section styles------------------- */
+
+/* --------------------- Quetion progress-bar section styles------------------- */
+/* ###########left side */
+.quetion-progress-bar-container h1{
+    color: var(--base-color);
+    font-family: myFont;
+    font-size: 60px;
+    line-height: 58px;
+}
+@media (max-width:500px) {
+    .quetion-progress-bar-container h1{
+        font-size: 50px;
+    }
+}
+.quetion-progress-bar-left img{
+    width: 37%;
+}
+.quetion-progress-bar-left h4{
+    font-weight: 700;
+}
+/* ###########rigth side */
+.progress-bar-container{
+    background-color: #FBFBFB;
+    border-radius: 20px;
+    padding: 40px 0 10px 0;
+    height: 130px;
+}
+.progress-bar-colors{
+    width: 92%;
+    height: 46px;
+    margin: 0 auto;
+    background-color: #D9D9D9;
+    cursor: pointer;
+}
+.progress-bar-colors .progress-bar-red{
+    background-color:#C80A50;
+    width: 0%;
+}
+.progress-bar-red-animation{
+    animation:progress-bar-red-animation 2s forwards;
+}
+@keyframes progress-bar-red-animation {
+    to{
+        width: 20%;
+    }
+}
+.progress-bar-colors .progress-bar-yellow{
+    background-color: #ECBE5E;
+    width: 0%;
+}
+.progress-bar-yellow-animation{
+    animation:progress-bar-yellow-animation 2s forwards;
+}
+@keyframes progress-bar-yellow-animation {
+    to{
+        width: 30%;
+    }
+}
+.progress-bar-colors .progress-bar-green{
+    background-color: #35945A;
+    width: 5%;
+}
+.progress-bar-green-animation{
+    animation:progress-bar-green-animation 2s forwards ease ;
+}
+@keyframes progress-bar-green-animation {
+    to{
+        width: 50%;
+    }
+}
+.progress-bar-emoji{
+    opacity: 0;
+}
+.progress-bar-emoji img{
+    width: 11%;
+}
+.progress-bar-emoji img:nth-child(2){
+    margin-left: -70px;
+}
+.progress-bar-emoji-animation{
+    animation: emojiprogress 3s forwards;
+}
+@keyframes emojiprogress {
+    from{
+        opacity: 0;
+        margin-top: 60px;
+    }
+    to{
+        opacity: 1;
+        margin-top: -28px;
+    }
+}
+/* ---------------------  End Quetion progress-bar section styles------------------- */
