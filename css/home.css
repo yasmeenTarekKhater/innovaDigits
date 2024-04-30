@@ -340,8 +340,9 @@
 .quetion-progress-bar-left img{
     width: 37%;
 }
-.quetion-progress-bar-left h4,.quetion-horizontal-chart-rigth h4{
+.quetion-progress-bar-left h4,.quetion-horizontal-chart-rigth h4,.pie-chart-left h4{
     font-weight: 700;
+    color: var(--base-color);
 }
 /* ###########rigth side */
 .progress-bar-container{
@@ -509,3 +510,113 @@
     }
 }
 /* ---------------------  End horizontal-chart section styles------------------- */
+
+/* ---------------------  Pie chart section styles------------------- */
+.pie-chart-container{
+    margin-top: 80px;
+}
+.pie-chart-rigth{
+    background-color: var(--charts-background);
+    border-radius: 20px;
+    padding: 25px 0px 20px;
+}
+.pie-chart-circle{
+    width: 30vh;
+    height: 30vh;
+    margin:0 auto;
+    background-color: var(--base-color);
+    border-radius: 50%;
+    background: repeating-conic-gradient(
+        from -70deg,
+        var(--content-accent-purble) 0deg 200deg,
+        var(--content-accent-ligthblue) 200deg 350deg
+    );
+    opacity: 0.5;
+    cursor: pointer;
+}
+@media  (max-width:592px) {
+    .pie-chart-circle{
+        width: 26vh;
+        height: 26vh;
+    }
+}
+.pie-chart-circle-animation{
+    animation: pieChartAnimation 2s forwards;
+}
+@keyframes pieChartAnimation {
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.1);
+        border: 1px solid var(--content-accent-purble);
+    }
+}
+.pie-chart-container .answer-circle-one,.pie-chart-container .answer-circle-two{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    margin-top: 4px;
+}
+.answer-circle-one{
+    background-color: var(--content-accent-purble);
+}
+.answer-circle-two{
+    background-color: var(--content-accent-ligthblue);
+}
+.pie-chart-numbers p{
+    color:#9291A5;
+}
+.pie-chart-numbers span{
+    color: #1E1B39;
+    font-weight: 500;
+}
+.pie-chart-circle img{
+    opacity: 0;
+}
+.pie-avatar-one{
+    width: 18%;
+    position: absolute;
+    top:10px;
+    left: 25%;
+}
+.pie-avatar-two{
+    width: 24%;
+    position: absolute;
+    right:-5%;
+    top: 10px;
+}
+.pie-avatar-three{
+    width: 20%;
+    position: absolute;
+    left:-10%;
+    top: 10px;
+}
+.pie-avatar-four{
+    width: 15%;
+    position: absolute;
+    right:20%;
+    top: 20px;
+}
+.pie-avatar-five{
+    width: 20%;
+    position: absolute;
+    left:28%;
+    top: 55px;
+}
+.pie-avatars-animation{
+    animation:pieAvatarsAnimation 2s forwards ;
+}
+@keyframes pieAvatarsAnimation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(10px);
+    }
+}
+/* ---------------------  End Pie chart section styles------------------- */
+
+

@@ -77,3 +77,19 @@ barsHorizontalContainer.addEventListener('click',()=>{
     progressBarsHorizontalStars.classList.add("quetion-horizontal-chart-stars");
 });
 //--------------------End  Question progress bars Horizontal animation-------------------
+
+//--------------------End  Question progress bars Horizontal animation-------------------
+
+const pieChartCircle=document.querySelector(".pie-chart-circle");
+const pieChartAvatars=Array.from(document.querySelectorAll(".pie-chart-circle img"));
+
+// add event click to change color and scale and show avatars
+pieChartCircle.addEventListener('click',function(){
+
+  this.classList.add("pie-chart-circle-animation");
+  pieChartAvatars.forEach((avatar,index)=>{
+      avatar.classList.add("pie-avatars-animation");
+  });
+});
+
+//--------------------End  Question progress bars Horizontal animation-------------------
