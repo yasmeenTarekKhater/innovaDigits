@@ -53,8 +53,27 @@ progressBar.addEventListener('click',()=>{
     progressBarColors.forEach((color,index)=>{
       color.classList.add(progressBarColorsClasses[index]);
     });
-    
+
 });
 
 
 //-------------------- End Question progress bar animation-------------------
+
+//-------------------- Question progress bars Horizontal animation-------------------
+
+const barsHorizontalContainer=document.querySelector(".quetion-horizontal-chart-left");
+const progressBarsHorizontal=Array.from(document.querySelectorAll(".quetion-horizontal-chart-left .progress-bar"));
+const progressBarsHorizontalStars=document.querySelector(".quetion-horizontal-chart-left .progress img");
+
+const progressBarsWidth=["progress-bar-horizontal-one","progress-bar-horizontal-two",
+"progress-bar-horizontal-three","progress-bar-horizontal-four","progress-bar-horizontal-five"];
+
+
+//add event click increase width of progress bars
+barsHorizontalContainer.addEventListener('click',()=>{
+    progressBarsHorizontal.forEach((bar,index)=>{
+      bar.classList.add(progressBarsWidth[index])
+    });
+    progressBarsHorizontalStars.classList.add("quetion-horizontal-chart-stars");
+});
+//--------------------End  Question progress bars Horizontal animation-------------------

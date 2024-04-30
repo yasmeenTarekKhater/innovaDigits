@@ -299,10 +299,13 @@
 }
 .key-features-items div{
     border-radius: 15px;
-    padding:0 10px 10px 10px;
+    padding:0 10px 20px 10px;
     background-color:rgba(145, 145, 145, 0.1);
     backdrop-filter: blur(10px);
     overflow: hidden;
+}
+.key-features-items div h5{
+    margin-left: 20px;
 }
 .key-features-items div img{
     width: 100%;
@@ -319,6 +322,10 @@
 
 /* --------------------- Quetion progress-bar section styles------------------- */
 /* ###########left side */
+.quetion-progress-bar-container{
+   margin-top: 80px;
+   margin-bottom: 80px;
+}
 .quetion-progress-bar-container h1{
     color: var(--base-color);
     font-family: myFont;
@@ -333,12 +340,12 @@
 .quetion-progress-bar-left img{
     width: 37%;
 }
-.quetion-progress-bar-left h4{
+.quetion-progress-bar-left h4,.quetion-horizontal-chart-rigth h4{
     font-weight: 700;
 }
 /* ###########rigth side */
 .progress-bar-container{
-    background-color: #FBFBFB;
+    background-color: var( --charts-background);
     border-radius: 20px;
     padding: 40px 0 10px 0;
     height: 130px;
@@ -409,3 +416,96 @@
     }
 }
 /* ---------------------  End Quetion progress-bar section styles------------------- */
+
+/* ---------------------  Quetion horizontal-chart section styles------------------- */
+.quetion-horizontal-chart-rigth img{
+    width: 30%;
+}
+.quetion-horizontal-chart-left{
+    background-color: var( --charts-background);
+    color: var(--base-color);
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+.quetion-horizontal-chart-left .progress-bar{
+    background-color: var(--content-accent-purble);
+}
+.quetion-horizontal-chart-left .progress img{
+    position: absolute;
+    top: -10px;
+    left: 18%;
+    width: 4rem;
+    height: 42px;
+    opacity: 0;
+}
+/* ###########left side animation */
+.quetion-horizontal-chart-stars{
+    animation:progressBarsHorizintalStars 1s forwards;
+}
+@keyframes progressBarsHorizintalStars {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        left: 48%;
+    }
+}
+.progress-bar-horizontal-one{
+    animation: progressBarHAnimationOne 1s forwards;
+}
+@keyframes progressBarHAnimationOne {
+    from{
+        width: 0;
+    }
+    to{
+        width: 20%;
+    }
+}
+.progress-bar-horizontal-two{
+    animation: progressBarHAnimationTwo 1s forwards;
+}
+@keyframes progressBarHAnimationTwo {
+    from{
+        width: 0;
+    }
+    to{
+        width: 70%;
+    }
+}
+.progress-bar-horizontal-three{
+    animation: progressBarHAnimationThree 1s forwards;
+}
+@keyframes progressBarHAnimationThree {
+    from{
+        width: 0;
+    }
+    to{
+        width: 40%;
+    }
+}
+.progress-bar-horizontal-four{
+    animation: progressBarHAnimationFour 1s forwards;
+}
+@keyframes progressBarHAnimationFour {
+    from{
+        width: 0;
+    }
+    to{
+        width: 50%;
+    }
+}
+.progress-bar-horizontal-five{
+    animation: progressBarHAnimationFive 1s forwards;
+}
+@keyframes progressBarHAnimationFive {
+    from{
+        width: 0;
+    }
+    to{
+        width: 30%;
+    }
+}
+/* ---------------------  End horizontal-chart section styles------------------- */
