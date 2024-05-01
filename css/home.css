@@ -698,10 +698,19 @@
 .question-languages-imgone-rigth{
     animation: questionLanguageAnimationOneRigth 2s forwards;
 }
-
+.question-languages-imgone-rigth2{
+    animation: questionLanguageAnimationOneRigth2 2s forwards;
+}
 @keyframes questionLanguageAnimationOneRigth {
     to{
         right: -80%;
+    }
+}
+@keyframes questionLanguageAnimationOneRigth2 {
+    from{
+        right: -80%;
+    }to{
+        right: 0;
     }
 }
 .question-languages-slider-rigth .question-languages-slider-imgtwo{
@@ -714,21 +723,29 @@
 .question-languages-imgtwo-left{
     animation: questionLanguageAnimationTwoLeft 2s forwards;
 }
-
+.question-languages-imgtwo-left2{
+    animation: questionLanguageAnimationTwoLeft2 2s forwards;
+}
 @keyframes questionLanguageAnimationTwoLeft {
     to{
         left: 34%;
     }
 }
+@keyframes questionLanguageAnimationTwoLeft2 {
+    from{
+        left: 34%;
+    }to{
+        left: 100%;
+    }
+}
 /* ---------------------  End Question Languages Slider section styles------------------- */
 
-/* ---------------------  End Question Languages Slider section styles------------------- */
+/* ---------------------  Surveying Spectrum section styles------------------- */
 .surveying-spectrum-container{
-    height: 635px;
-    background-color: #F3EBFE;
+    height: 50%;
 }
 .surveying-spectrum-container-rigth,.surveying-spectrum-container-left{
-    height: 635px;
+    height: 50%;
 }
 @media (max-width:1030px) {
     .surveying-spectrum-container-rigth h1{
@@ -768,14 +785,98 @@
     width: 74%;
     height: 145px;
 }
-/* ---------------------  End Question Languages Slider section styles------------------- */
+/* ---------------------  End Surveying Spectrum section styles------------------- */
 
 /* ---------------------  Integrate With section styles------------------- */
+
 .integrate-with-container-top p{
     color: var(--paragraph-color-grayish);
     margin-top: 15px;
     font-size: 18.5px;
 }
-
-
+.integrate-with-slider-track-top{
+    animation: integrateWithSliderAnimation 10s linear infinite;
+    animation-direction: reverse;
+}
+.integrate-with-slider-track-bottom{
+    animation: integrateWithSliderAnimation 10s linear infinite;
+}
+.integrate-with-slider img{
+    width: 13vw;
+    margin: 0 20px;
+}
+@keyframes integrateWithSliderAnimation {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
 /* ---------------------  End Integrate With section styles------------------- */
+
+/* ---------------------  Free Trail section styles------------------- */
+.free-trail-container{
+    background:var(--base-color) url(../assets/images/Vectorfree.png) no-repeat bottom;
+    background-size:270%;
+    color: white;
+    cursor: pointer;
+    padding: 200px 0;
+    margin-top: 100px;
+    z-index: -1;
+}
+.free-trail-shadow{
+    position: absolute;
+    width: 100%;
+    height: 1000vh;
+    top: 20%;
+    background-color: #11023aaf;
+    z-index: -1;
+}
+.free-trail-container-left{
+    height: 100%;
+}
+.free-trail-container-left h1{
+    font-family: myFont;
+    margin-bottom: 40px;
+    font-weight: 900;
+    font-size: 60px;
+}
+.free-trail-container-left h1 span{
+    color: var(--content-accent-ligthblue);
+}
+.free-trail-container-rigth form{
+    background-color: #170037;
+    border-radius: 16px;
+    padding: 60px;
+}
+.free-trail-container-rigth form input{
+    width: 90%;
+    height: 45px;
+    background-color:rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+}
+.free-trail-container-rigth form button{
+    background-color: var(--content-accent-purble);
+    color: white;
+    border-radius: 13px;
+    padding: 12px 53px;
+}
+.free-trail-container-rigth form button:hover{
+    border-color:white;
+    background-color: transparent;
+    color: white;
+}
+/* ---------------------  End Free Trail section styles------------------- */
+
+/* ---------------------  footer section styles------------------- */
+
+footer{
+    background-color: rgba(255, 255, 255, 1);
+}
+footer h6{
+    color: var(--base-color);
+    margin: 5px 0;
+}
+/* ---------------------  End footer section styles------------------- */

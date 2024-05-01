@@ -136,13 +136,19 @@ const questionSliderClasses=["question-languages-imgone-rigth","question-languag
 
 questionSliderArrows[1].addEventListener('click',function(){
   questionSliderSlides[0].classList.add(questionSliderClasses[0]);
+  questionSliderSlides[0].classList.remove("question-languages-imgone-rigth2");
   questionSliderSlides[1].classList.add(questionSliderClasses[1]);
+  questionSliderSlides[1].classList.remove("question-languages-imgtwo-left2");
   this.classList.add("question-languages-slider-opacity");
   questionSliderArrows[0].classList.remove("question-languages-slider-opacity");
 });
 questionSliderArrows[0].addEventListener('click',function(){
   questionSliderSlides[1].classList.remove(questionSliderClasses[1]);
+  questionSliderSlides[1].classList.add("question-languages-imgtwo-left2");
+
   questionSliderSlides[0].classList.remove(questionSliderClasses[0]);
+  questionSliderSlides[0].classList.add("question-languages-imgone-rigth2");
+
   this.classList.add("question-languages-slider-opacity");
   questionSliderArrows[1].classList.remove("question-languages-slider-opacity");
 });
