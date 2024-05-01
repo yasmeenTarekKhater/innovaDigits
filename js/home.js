@@ -93,3 +93,59 @@ pieChartCircle.addEventListener('click',function(){
 });
 
 //--------------------End  Question progress bars Horizontal animation-------------------
+
+//--------------------Vertical line bars  animation -------------------
+
+const ctx = document.getElementById('myChart');
+
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4', 'Answer 5',"Answer 6","Answer 7","Answer 8"],
+      datasets: [{
+        data: [30, 50, 20,10, 30, 30,30,80],
+        pointLabels: [],
+        borderWidth: 0,
+        backgroundColor: ['red','blue','pink','purple'],
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            callback: function(value, index, values) {
+              return value + '%';
+            },
+            stepSize: 10,
+            max:100,
+            min: 0
+          }
+        }
+      },
+    },
+});
+
+//--------------------End  Vertical line bars animation-------------------
+
+//--------------------Question and Languages slider-------------------
+
+const questionSliderArrows=Array.from(document.querySelectorAll(".question-languages-slider-arrows div"));
+const questionSliderSlides=Array.from(document.querySelectorAll(".question-languages-slider-rigth img"));
+const questionSliderClasses=["question-languages-imgone-rigth","question-languages-imgtwo-left"]
+
+questionSliderArrows[1].addEventListener('click',function(){
+  questionSliderSlides[0].classList.add(questionSliderClasses[0]);
+  questionSliderSlides[1].classList.add(questionSliderClasses[1]);
+  this.classList.add("question-languages-slider-opacity");
+  questionSliderArrows[0].classList.remove("question-languages-slider-opacity");
+});
+questionSliderArrows[0].addEventListener('click',function(){
+  questionSliderSlides[1].classList.remove(questionSliderClasses[1]);
+  questionSliderSlides[0].classList.remove(questionSliderClasses[0]);
+  this.classList.add("question-languages-slider-opacity");
+  questionSliderArrows[1].classList.remove("question-languages-slider-opacity");
+});
+
+//--------------------End  Question and Languages slider-------------------
+
