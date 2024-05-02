@@ -132,26 +132,30 @@ new Chart(ctx, {
 
 const questionSliderArrows=Array.from(document.querySelectorAll(".question-languages-slider-arrows div"));
 const questionSliderSlides=Array.from(document.querySelectorAll(".question-languages-slider-rigth img"));
-const questionSliderClasses=["question-languages-imgone-rigth","question-languages-imgtwo-left"]
+const questionSliderClasses=["question-languages-imgone-rigth","question-languages-imgtwo-left","question-languages-slider-opacity"]
 
-questionSliderArrows[1].addEventListener('click',function(){
-  questionSliderSlides[0].classList.add(questionSliderClasses[0]);
-  questionSliderSlides[0].classList.remove("question-languages-imgone-rigth2");
-  questionSliderSlides[1].classList.add(questionSliderClasses[1]);
-  questionSliderSlides[1].classList.remove("question-languages-imgtwo-left2");
-  this.classList.add("question-languages-slider-opacity");
-  questionSliderArrows[0].classList.remove("question-languages-slider-opacity");
+questionSliderArrows.forEach((arrow)=>{
+    arrow.addEventListener('click',function(){
+      //handle slides moving
+      questionSliderSlides[0].classList.toggle(questionSliderClasses[0]);
+      questionSliderSlides[1].classList.toggle(questionSliderClasses[1]);
+      //handle arrows visibality
+      questionSliderArrows[0].classList.toggle(questionSliderClasses[2]);
+      questionSliderArrows[1].classList.toggle(questionSliderClasses[2]);
+    });
 });
-questionSliderArrows[0].addEventListener('click',function(){
-  questionSliderSlides[1].classList.remove(questionSliderClasses[1]);
-  questionSliderSlides[1].classList.add("question-languages-imgtwo-left2");
-
-  questionSliderSlides[0].classList.remove(questionSliderClasses[0]);
-  questionSliderSlides[0].classList.add("question-languages-imgone-rigth2");
-
-  this.classList.add("question-languages-slider-opacity");
-  questionSliderArrows[1].classList.remove("question-languages-slider-opacity");
-});
-
 //--------------------End  Question and Languages slider-------------------
 
+const freeTrailContainer=document.querySelector(".free-trail-container");
+const freeTrailContent=Array.from(document.querySelectorAll(".free-trail-content div"));
+const freeTrailShadow=document.querySelector(".free-trail-shadow");
+const freeTrailCkasses=["free-trail-container-left-move","free-trail-container-rigth-move"];
+
+
+freeTrailContainer.addEventListener('click',function(){
+  freeTrailContent.forEach((content,index)=>{
+    content.classList.toggle(freeTrailCkasses[index]);
+  });
+  freeTrailShadow.classList.toggle("free-trail-shadow-transparent");
+  this.classList.toggle("free-trail-container-small");
+});

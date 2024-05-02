@@ -104,8 +104,32 @@
 /* ---------------------End Nav bar styles------------------- */
 
 /* ---------------------header styles------------------- */
+.moving-heading{
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+    height: 80px;
+    margin-bottom: -20px;
+    overflow: hidden;
+}
+.moving-heading span{
+    display: flex;
+    flex-direction: column;
+    animation: spanAnimation 12s  linear infinite;
+}
+@keyframes spanAnimation {
+    0%{
+        transform: translateY(20%);
+    }
+    100%{
+        transform: translateY(-150%);
+    }
+}
 .my-header{
     padding: 130px 0 70px 0;
+    background: url(../assets/images/Vector.png) no-repeat;
+    background-size: 100%;
+    background-position:-350px -500% ;
 }
 .person-one-header img{
     width: 77px;
@@ -647,6 +671,7 @@
     var(--background-primary-gradient) 90%);
     height: 650px;
     overflow: hidden;
+    color: white;
 }
 /* @media (min-width:1100px) {
     .question-languages-slider{
@@ -656,7 +681,6 @@
 .question-languages-slider-left,.question-languages-slider-rigth{
     height: 650px;
     padding: 10% 0 30% 7%;
-    color:white;
 }
 .question-languages-slider-left h1{
     font-family: myFont;
@@ -675,7 +699,8 @@
     cursor: pointer;
 }
 .question-languages-slider-opacity{
-    opacity: .5;
+    opacity: 0.6;
+    pointer-events: none;
 }
 .question-languages-slider-arrows img{
    position: relative;
@@ -693,50 +718,20 @@
     width: 70%;
     right: 0;
     top: 13.5%;
-    transition: 3s;
+    transition: 1.5s;
 }
 .question-languages-imgone-rigth{
-    animation: questionLanguageAnimationOneRigth 2s forwards;
-}
-.question-languages-imgone-rigth2{
-    animation: questionLanguageAnimationOneRigth2 2s forwards;
-}
-@keyframes questionLanguageAnimationOneRigth {
-    to{
-        right: -80%;
-    }
-}
-@keyframes questionLanguageAnimationOneRigth2 {
-    from{
-        right: -80%;
-    }to{
-        right: 0;
-    }
+    transform: translateX(120%);
 }
 .question-languages-slider-rigth .question-languages-slider-imgtwo{
     position: absolute;
     width: 50%;
     top: 7%;
     left:100%;
-    transition: 3s;
+    transition: 1.5s;
 }
 .question-languages-imgtwo-left{
-    animation: questionLanguageAnimationTwoLeft 2s forwards;
-}
-.question-languages-imgtwo-left2{
-    animation: questionLanguageAnimationTwoLeft2 2s forwards;
-}
-@keyframes questionLanguageAnimationTwoLeft {
-    to{
-        left: 34%;
-    }
-}
-@keyframes questionLanguageAnimationTwoLeft2 {
-    from{
-        left: 34%;
-    }to{
-        left: 100%;
-    }
+    transform: translateX(-140%);
 }
 /* ---------------------  End Question Languages Slider section styles------------------- */
 
@@ -755,7 +750,7 @@
 .surveying-spectrum-container-left img{
     width: 112%;
     height: 100%;
-    margin-left:-3%;
+    margin-left:-4%;
 }
 .surveying-spectrum-container-rigth{
     padding: 7% 6% 0 0;
@@ -823,18 +818,30 @@
     cursor: pointer;
     padding: 200px 0;
     margin-top: 100px;
-    z-index: -1;
+    z-index: 2;
+}
+.free-trail-container-small{
+    background-size: 30%;
 }
 .free-trail-shadow{
     position: absolute;
     width: 100%;
-    height: 1000vh;
-    top: 20%;
+    height: 100%;
+    top: 0%;
     background-color: #11023aaf;
     z-index: -1;
 }
-.free-trail-container-left{
-    height: 100%;
+.free-trail-shadow-transparent{
+    background-color: transparent;
+}
+.free-trail-container-left,.free-trail-container-rigth,.free-trail-shadow,.free-trail-container{
+    transition: 1s;
+}
+.free-trail-container-left-move{
+    transform: translateX(-140%);
+}
+.free-trail-container-rigth-move{
+    transform: translateX(140%);
 }
 .free-trail-container-left h1{
     font-family: myFont;
