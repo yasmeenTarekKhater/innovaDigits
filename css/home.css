@@ -50,6 +50,7 @@
 .navbar button:hover,.header-btn:hover{
     border: 1px solid white;
     background-color: transparent;
+    color: white;
 }
 .navbar .dropdown-menu{
     background-color: var(--dropdown-color) !important; 

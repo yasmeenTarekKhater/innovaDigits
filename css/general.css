@@ -1,0 +1,46 @@
+/* --------------------------- header style------------------------ */
+.my-header-general-container{
+    background:url(../assets/images/Rectangle\ 3463216.png);
+    background-size: cover;
+    overflow: hidden;
+}
+.my-header-general{
+    padding: 200px 0 150px 0;
+    color: white;
+}
+.my-header-general h1{
+    font-family: myFont;
+    font-size: 60px;
+    margin-bottom: 30px;
+    line-height: 64px;
+}
+.my-header-general p{
+    color: #D8DEE6;
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 25px;
+}
+.my-header-general span{
+    background: linear-gradient(to right,var(--background-primary-gradient) 60%, var(--background-secondary-gradient));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.my-header-general img:nth-of-type(1){
+    width: 10vw;
+}
+.my-header-general img:nth-of-type(2){
+    width: 24vw;
+    margin-top: 55px;
+}
+.header-general-img-rigth img:nth-of-type(1){
+    width: 15vw;
+}
+.header-general-img-rigth img:nth-of-type(2){
+    width: 22vw;
+}
+.my-header-general-rigth{
+    padding-top: 50px;
+    background: url(../assets/images/Create\ a\ survey.png) no-repeat top;
+    background-size: 60% 80%;
+}
+/* --------------------------- End header style------------------------ */
