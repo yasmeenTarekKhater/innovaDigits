@@ -1,4 +1,4 @@
-/* --------------------------- header style------------------------ */
+/* --------------------------- header general style------------------------ */
 .my-header-general-container{
     background:url(../assets/images/Rectangle\ 3463216.png);
     background-size: cover;
@@ -8,7 +8,7 @@
     padding: 200px 0 150px 0;
     color: white;
 }
-.my-header-general h1{
+.my-header-general h1,.question-slider-top h1 ,.survey-that-drive-container h1{
     font-family: myFont;
     font-size: 60px;
     margin-bottom: 30px;
@@ -43,4 +43,79 @@
     background: url(../assets/images/Create\ a\ survey.png) no-repeat top;
     background-size: 60% 80%;
 }
-/* --------------------------- End header style------------------------ */
+/* --------------------------- End header general style------------------------ */
+
+/* --------------------------- Question Slider style------------------------ */
+.question-slider-container{
+    overflow: hidden;
+    color: var(--base-color);
+  
+}
+.question-slider-top{
+    padding: 50px 0px 30px 90px;
+}
+.question-slider-arrows>div{
+    gap: 43px;
+    margin-top: 6vh;
+}
+.question-slider-arrows img{
+    border: 1px solid var(--base-color);
+    border-radius: 50%;
+    padding: 17px;
+    cursor: pointer;
+}
+.arrows-opacity{
+    opacity: 0.6;
+    pointer-events: none;
+}
+.question-slider-slide{
+    background-color:gainsboro;
+    border-radius: 35px;
+    width: 78%;
+    margin: 0 auto;
+    padding: 25px 0;
+    overflow: hidden;
+}
+.question-slider-slides{
+    transition: 1s;
+}
+.question-slider-slide:first-of-type{
+    margin-left: 95px;
+}
+.question-slider-slide-left{
+    padding-left: 70px;
+}
+.question-slider-slide-left h1{
+    font-family: myFont;
+    margin: 15px 0 43px 0;
+}
+.question-slider-slide-left p{
+    font-weight: 500;
+    font-size: 13px;
+}
+.question-slider-slide-left img{
+    width: 2.5vw;
+}
+.question-slider-slide-rigth img{
+    width: 100%;
+    margin-left: .9vw;
+    margin-bottom: -4vh;
+}
+@media (max-width:992px) {
+    .question-slider-slide-rigth img{
+        margin-left: 10vw;
+    }
+}
+/* --------------------------- End Question Slider style------------------------ */
+
+/* --------------------------- Survey That Drive section style------------------------ */
+.survey-that-drive-container{
+    margin-top: 150px;
+    color: var(--base-color);
+}
+.survey-that-drive-container h1{
+    margin-left: -2vw;
+}
+
+/* --------------------------- End Survey That Drive section style------------------------ */
+

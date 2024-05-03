@@ -1,6 +1,6 @@
 //----------changing features image on hover links----------------------------------------------------
-const links = Array.from(document.querySelectorAll('.features-dropdown a'));
-const featuresImages=Array.from(document.querySelectorAll('.features-dropdown-images'));
+const links = document.querySelectorAll('.features-dropdown a');
+const featuresImages=document.querySelectorAll('.features-dropdown-images');
 
 // Add event listeners to the links
 links.forEach((link, index) => {
@@ -43,7 +43,7 @@ magicCircleContainer.addEventListener('click',()=>{
 
 const progressBar=document.querySelector(".progress-bar-colors");
 const progressBarEmoji=document.querySelector(".progress-bar-emoji");
-const progressBarColors= Array.from(document.querySelectorAll(".progress-bar-colors div"));
+const progressBarColors= document.querySelectorAll(".progress-bar-colors div");
 const progressBarColorsClasses=["progress-bar-red-animation","progress-bar-yellow-animation","progress-bar-green-animation"];
 
 // add event click on progress bar to handle showing emojis and colors
@@ -62,7 +62,7 @@ progressBar.addEventListener('click',()=>{
 //-------------------- Question progress bars Horizontal animation-------------------
 
 const barsHorizontalContainer=document.querySelector(".quetion-horizontal-chart-left");
-const progressBarsHorizontal=Array.from(document.querySelectorAll(".quetion-horizontal-chart-left .progress-bar"));
+const progressBarsHorizontal=document.querySelectorAll(".quetion-horizontal-chart-left .progress-bar");
 const progressBarsHorizontalStars=document.querySelector(".quetion-horizontal-chart-left .progress img");
 
 const progressBarsWidth=["progress-bar-horizontal-one","progress-bar-horizontal-two",
@@ -81,7 +81,7 @@ barsHorizontalContainer.addEventListener('click',()=>{
 //--------------------End  Question progress bars Horizontal animation-------------------
 
 const pieChartCircle=document.querySelector(".pie-chart-circle");
-const pieChartAvatars=Array.from(document.querySelectorAll(".pie-chart-circle img"));
+const pieChartAvatars=document.querySelectorAll(".pie-chart-circle img");
 
 // add event click to change color and scale and show avatars
 pieChartCircle.addEventListener('click',function(){
@@ -130,8 +130,8 @@ new Chart(ctx, {
 
 //--------------------Question and Languages slider-------------------
 
-const questionSliderArrows=Array.from(document.querySelectorAll(".question-languages-slider-arrows div"));
-const questionSliderSlides=Array.from(document.querySelectorAll(".question-languages-slider-rigth img"));
+const questionSliderArrows=document.querySelectorAll(".question-languages-slider-arrows div");
+const questionSliderSlides=document.querySelectorAll(".question-languages-slider-rigth img");
 const questionSliderClasses=["question-languages-imgone-rigth","question-languages-imgtwo-left","question-languages-slider-opacity"]
 
 questionSliderArrows.forEach((arrow)=>{
@@ -147,7 +147,7 @@ questionSliderArrows.forEach((arrow)=>{
 //--------------------End  Question and Languages slider-------------------
 
 const freeTrailContainer=document.querySelector(".free-trail-container");
-const freeTrailContent=Array.from(document.querySelectorAll(".free-trail-content div"));
+const freeTrailContent=document.querySelectorAll(".free-trail-content div");
 const freeTrailShadow=document.querySelector(".free-trail-shadow");
 const freeTrailCkasses=["free-trail-container-left-move","free-trail-container-rigth-move"];
 
