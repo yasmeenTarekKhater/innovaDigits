@@ -113,9 +113,62 @@
     margin-top: 150px;
     color: var(--base-color);
 }
-.survey-that-drive-container h1{
-    margin-left: -2vw;
+.survey-that-drive-container>div{
+    gap: 36px;
 }
-
+.survey-that-drive-container h1{
+   padding-left: 6vw;
+}
+.survey-that-drive-item{
+    border: 2px solid  #F4F4F4;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.survey-that-drive-item h2{
+    font-family: myFont;
+    margin-bottom: 20px;
+}
+.survey-that-drive-item p{
+    font-size: 13px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-left: .2vw;
+    line-height: 25px;
+}
+.survey-that-drive-item-img{
+    background-color: #f4f4f463;
+    overflow: hidden;
+    width: 130%;
+    height: 280px;
+    margin-left: -3vw;
+    padding: 50px 0;
+}
+@media (max-width:1070px) {
+    .survey-that-drive-item-img{
+        height: 180px;
+    }
+}
+@media (min-width:1500px) {
+    .survey-that-drive-item-img{
+        height: 340px;
+    }
+}
+.survey-that-drive-item-img img{
+    width: 81%;
+    margin: 0 2.3vw;
+}
+.survey-that-drive-item-img2 img{
+    width: 43%;
+    transform: translate(9.3vw,-5vh);
+}
+.survey-that-drive-item-img3 img{
+    width: 62%;
+    transform: translate(4.7vw,-8.4vh);
+}
+.survey-that-drive-item-img4 img{
+    width: 70%;
+    transform: translate(2.5vw,-4vh);
+}
 /* --------------------------- End Survey That Drive section style------------------------ */
 
