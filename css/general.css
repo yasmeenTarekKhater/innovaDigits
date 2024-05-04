@@ -8,7 +8,7 @@
     padding: 200px 0 150px 0;
     color: white;
 }
-.my-header-general h1,.question-slider-top h1 ,.survey-that-drive-container h1,.make-decision-general-container h2{
+.my-header-general h1,.question-slider-top h1 ,.survey-that-drive-container h1,.make-decision-general-container h2,.elevate-your-insights-container h1{
     font-family: myFont;
     font-size: 60px;
     margin-bottom: 30px;
@@ -257,6 +257,64 @@
     margin-top: -20%;
 }
 /* --------------------------- End Question that make Decision section style------------------------ */
+
+/* --------------------------- Elevate your insights section style------------------------ */
+.elevate-your-insights-container{
+  background: var(--base-color) url(../assets/images/Vector\ \(1\).png) no-repeat -10% 100%;
+  background-size: 86%;
+  margin-top: 90px;
+  color: white;
+  padding-top: 70px;
+}
+.elevate-your-insights-container p{
+    color: #dfdcdc;
+    padding-left:6%;
+    font-size: 1.1rem;
+}
+@media (max-width:768px) {
+    .elevate-your-insights-container p{
+        padding-left:3%;
+    }
+}
+.elevate-your-insights-bottom img:nth-child(1){
+    margin-right: -6.6vw;
+    z-index: 4;
+}
+/* --------------------------- End Elevate your insights  section style------------------------ */
+
+/* --------------------------- Insightful Surveys Slide section style------------------------ */
+.insightful-surveys-container{
+    margin-top: 80px;
+    overflow: hidden;
+    color: var(--base-color);
+}
+.insightful-surveys-slides{
+    gap: 36px;
+    transition: 1s;
+}
+.insightful-surveys-slide{
+    border: 1px solid #EAE6F0;
+    border-radius: 23px;
+    padding: 46px 0 29px 39px;
+}
+.insightful-surveys-slide:first-of-type{
+    margin-left: 80px;
+}
+.insightful-surveys-slide img{
+    width: 2.7vw;
+}
+.insightful-surveys-slide h6{
+    font-weight: 800;
+    padding: 30px 0 10px 0;
+}
+.insightful-surveys-slide p{
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: #363E49;
+}
+    
+/* --------------------------- End Insightful Surveys Slide section style------------------------ */
 
 
 

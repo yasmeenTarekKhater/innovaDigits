@@ -30,3 +30,30 @@ let count=1;
 
 
 //------------------End question slider ------------------------------
+const insightfulSlidesContainer=document.querySelector(".insightful-surveys-slides"); 
+const insightfulSliderButtons=document.querySelectorAll(".insightful-surveys-arrows div");
+let translateXValue2 = 0;
+let count2=0;
+
+//enhance this code by making function
+insightfulSliderButtons[1].addEventListener('click',function(){
+        translateXValue -= 70;
+        insightfulSlidesContainer.style.transform = `translateX(${translateXValue}%)`;
+        count++;
+        if (count === 3) {
+            this.classList.add("arrows-opacity");
+        } else {
+            insightfulSliderButtons[0].classList.remove("arrows-opacity");
+        }
+});
+insightfulSliderButtons[0].addEventListener('click',function(){
+        translateXValue += 70;
+        insightfulSlidesContainer.style.transform = `translateX(${translateXValue}%)`;
+        count--;
+        if (count === 1) {
+            this.classList.toggle("arrows-opacity");
+        }
+        else {
+            insightfulSliderButtons[1].classList.remove("arrows-opacity");
+        }
+});
