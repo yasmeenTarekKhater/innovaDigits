@@ -8,7 +8,7 @@
     padding: 200px 0 150px 0;
     color: white;
 }
-.my-header-general h1,.question-slider-top h1 ,.survey-that-drive-container h1{
+.my-header-general h1,.question-slider-top h1 ,.survey-that-drive-container h1,.make-decision-general-container h2{
     font-family: myFont;
     font-size: 60px;
     margin-bottom: 30px;
@@ -171,4 +171,95 @@
     transform: translate(2.5vw,-4vh);
 }
 /* --------------------------- End Survey That Drive section style------------------------ */
+
+/* ---------------------------  Question that make Decision section style------------------------ */
+.make-decision-general-container{
+    margin-top: 120px;
+    background:url(../assets/images/Rectangle\ background.png) no-repeat center;
+    background-size: 100%;
+    color: var(--base-color);
+    padding: 170px 0 160px 0;
+    overflow: hidden;
+}
+
+.make-decision-general-container img{
+    width: 2.5vw;
+}
+@media (max-width:992px) {
+    .make-decision-general-container{
+        background-size: 300vw;
+        background-position:top;
+        border-top-left-radius: 24%;
+        border-top-right-radius: 24%;
+    }
+    .make-decision-general-container>img{
+        padding-top: 60px;
+    }
+}
+.make-decision-general-container>img{
+    width: 84vw;
+    margin-top: -4vh;
+}
+.make-decision-general-container h2{
+    padding: 30px 0px 4px 0px;
+    font-weight: 900;
+}
+.make-decision-general-container-top{
+    justify-content: end;
+    width: 60%;
+    gap: 21vw;
+}
+.make-decision-general-container-middle{
+    align-items: flex-start;
+    gap: 5vw;
+}
+.make-decision-general-container-middle img:nth-of-type(1){
+    margin-top: -7vh;
+    width: 20px;
+}
+.make-decision-general-container-middle img:nth-of-type(2){
+    margin-top: -4vh;
+}
+.make-decision-general-container-middle p{
+    font-size: 15px;
+    padding-bottom: 38px;
+}
+.make-decision-general-container-bottom{
+    width: 90%;
+    margin: 0 auto;
+}
+.make-decision-general-container-bottom img{
+    width: 3vw;
+    height: 100%;
+    margin-top: -3vh;
+}
+.make-decision-general-container-bottom-text div{
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    padding:3px 0 2px 0;
+}
+.make-decision-general-container-bottom-text h6{
+  padding-right: 7px;
+}
+.make-decision-general-container-bottom-text .text-circle{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #00DDD0;
+    margin: 0 0 .7vh .4vw;
+}
+.make-decision-general-stars img{
+    width: 20vw;
+    margin-right: -95%;
+    margin-top: -20%;
+}
+/* --------------------------- End Question that make Decision section style------------------------ */
+
+
+
+
+
 
