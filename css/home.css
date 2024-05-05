@@ -1,9 +1,7 @@
 /* -----------first section style------------ */
 .nav-header{
     position: relative;
-    background: rgb(97,0,221);
-    background: linear-gradient(220deg, var(--background-secondary-gradient) 0%,
-    var(--background-primary-gradient) 90%);
+    background: linear-gradient(220deg, var(--background-secondary-gradient) 0%, var(--background-primary-gradient) 90%);
 }
 /* --------------------- Nav bar styles------------------- */
 .navbar{
@@ -27,7 +25,7 @@
 }
 @media(max-width:992px) {
     .navbar-collapse{
-        background-color: rgba(31, 30, 30, 0.308);
+        background-color: var(--base-color);
         padding: 10px;
         border-radius: 15px;
         margin-top: 10px;
@@ -60,10 +58,19 @@
     transition: 0.7s;
  }
  .features-dropdown{
-     padding: 20px 23px 55px 10px !important;
+     padding: 20px 23px 50px 0px !important;
      overflow: hidden;
-     height: 180px;
-     width: 400px;
+     width: 25.5rem !important;
+     height: 11.5rem;
+     margin-left: .7vw;
+     border-radius: 0;
+ }
+ @media (max-width:576px) {
+    .features-dropdown{
+        width: 15rem !important;
+        height: 18rem;
+        padding-left: 10px !important;
+    }
  }
  .features-dropdown a{
      color: var(--base-color) !important;
@@ -74,27 +81,28 @@
      color: var(--content-accent-purble) !important;
      font-weight: 700;
  }
- .default-features img{
-   position: relative;
-   top: 30px;
-}
-.default-features img,.general-features img{
+.default-features img{
+    width: 12rem;
     position: relative;
-    right: -6px;
-    width: 200px;
+    top: 1vh;
 }
-
+.general-features img{
+    width: 14rem;
+    position: relative;
+    top: 1vh;
+    right: -.6vw;
+}
 .questions-features img{
-   transform: scale(1.6) rotate(-3deg);
+   width: 17.5rem;
+   transform:rotate(-3deg);
    position: relative;
-   top: 41px;
-   right: -50px;
+   top: 2.7vh;
+   right: -2vw;
 }
 .survey-features img{
-    transform: scale(1.2);
+    width: 14rem;
     position: relative;
-    bottom: -23px;
-    right: -20px;
+    right: -2vw;
 }
 .show-features-images{
     display: block;
@@ -128,9 +136,12 @@
 }
 .my-header{
     padding: 130px 0 70px 0;
-    background: url(../assets/images/Vector.png) no-repeat;
-    background-size: 100%;
-    background-position:-350px -500% ;
+}
+.header-background{
+    position: absolute;
+    top: 25vh;
+    left: -4vw;
+    width: 70%;
 }
 .person-one-header img{
     width: 77px;
@@ -153,7 +164,7 @@
 }
 .my-header h1{
     font-family: myFont;
-    font-size: 60px;
+    font-size: 70px;
 }
 .my-header p{
     font-size: 20px;
@@ -179,6 +190,10 @@
 .people-two-header img{
     width: 108px;
     height: 108px;
+}
+.person-three-header img{
+    width: 6.5rem;
+    margin-left: 12vw;
 }
 .header-btn{
     width: 200px;

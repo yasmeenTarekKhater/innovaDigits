@@ -14,7 +14,7 @@
     <title>Mashoura</title>
   </head>
   <body>
-    <section class="nav-header mb-3">
+    <section class="nav-header mb-3 overflow-hidden">
       <nav class="navbar navbar-expand-lg navbar-light px-0 px-lg-5 py-4">
         <div class="container-fluid">
           <a class="navbar-brand ms-3" href="#">
@@ -34,11 +34,11 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/html/index.html">Home</a>
+                <a class="nav-link navbar-pages active" aria-current="page" href="/html/index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle navbar-pages"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -52,8 +52,8 @@
                   class="dropdown-menu features-dropdown"
                   aria-labelledby="navbarDropdown"
                 >
-                  <div class="d-flex justify-content-between">
-                    <div class="col-6">
+                  <div class=" d-block d-sm-flex justify-content-between">
+                    <div>
                       <li>
                         <a class="dropdown-item" href="/html/general.html"
                           >General</a
@@ -66,16 +66,14 @@
                         <a class="dropdown-item" href="#">Surveys Responses</a>
                       </li>
                     </div>
-                    <div
-                      class="col-6 default-features features-dropdown-images"
-                    >
+                    <div class="default-features features-dropdown-images">
                       <img
                         src="../assets/images/defaultFeatures.png"
                         alt="persons"
                       />
                     </div>
                     <div
-                      class="col-6 general-features features-dropdown-images hide-features-images"
+                      class="general-features features-dropdown-images hide-features-images"
                     >
                       <img
                         src="../assets/images/generalFeatures.png"
@@ -83,7 +81,7 @@
                       />
                     </div>
                     <div
-                      class="col-6 questions-features features-dropdown-images hide-features-images"
+                      class="questions-features features-dropdown-images hide-features-images"
                     >
                       <img
                         src="../assets/images/qustionsFeatures.png"
@@ -91,7 +89,7 @@
                       />
                     </div>
                     <div
-                      class="col-6 survey-features features-dropdown-images hide-features-images"
+                      class="survey-features features-dropdown-images hide-features-images"
                     >
                       <img
                         src="../assets/images/surveyFeatures.png"
@@ -102,13 +100,13 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link navbar-pages" href="#">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link navbar-pages" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+                <a class="nav-link navbar-pages" href="#">Contact Us</a>
               </li>
             </ul>
 
@@ -133,6 +131,7 @@
           </div>
         </div>
       </nav>
+      <img src="../assets/images/Vector.png" alt="N background" class="header-background">
       <header class="container my-header">
         <div class="row justify-content-center justify-content-sm-between">
           <div class="col-7 col-sm-3 text-center text-sm-end person-one-header">
@@ -176,7 +175,7 @@
         <div class="row justify-content-center justify-content-sm-between mt-5">
           <button class="col-3 col-md-3 btn header-btn">Get Started</button>
           <div
-            class="col-7 col-md-4 my-3 my-md-0 text-start text-sm-center person-three-header"
+            class="col-7 col-md-4 my-3 my-md-0 text-start text-sm-center align-self-end person-three-header"
           >
             <img src="../assets/images/personthree.png" alt="personthree" />
           </div>
