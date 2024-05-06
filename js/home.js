@@ -83,7 +83,7 @@ barsHorizontalContainer.addEventListener('click',()=>{
 });
 //--------------------End  Question progress bars Horizontal animation-------------------
 
-//--------------------End  Question progress bars Horizontal animation-------------------
+//--------------------Pie Chart animation-------------------
 
 const pieChartCircle=document.querySelector(".pie-chart-circle");
 const pieChartAvatars=document.querySelectorAll(".pie-chart-circle img");
@@ -92,46 +92,92 @@ const pieChartAvatars=document.querySelectorAll(".pie-chart-circle img");
 pieChartCircle.addEventListener('click',function(){
 
   this.classList.add("pie-chart-circle-animation");
-  pieChartAvatars.forEach((avatar,index)=>{
+  pieChartAvatars.forEach((avatar)=>{
       avatar.classList.add("pie-avatars-animation");
   });
 });
 
-//--------------------End  Question progress bars Horizontal animation-------------------
+//--------------------End  Pie Chart animation-------------------
 
-//--------------------Vertical line bars  animation -------------------
-
+//-------------------- Vertical line bars setup & animation -------------------
 const ctx = document.getElementById('myChart');
+const verticlChartContainer=document.querySelector(".vertical-bars-chart-left");
+const verticlChartImages=document.querySelectorAll(".vertical-bars-chart-left img");
+let dataValues;
 
-new Chart(ctx, {
-    type: 'bar',
-    data: {
+const  data= {
       labels: ['Answer 1', 'Answer 2', 'Answer 3', 'Answer 4', 'Answer 5',"Answer 6","Answer 7","Answer 8"],
       datasets: [{
-        data: [30, 50, 20,10, 30, 30,30,80],
-        pointLabels: [],
+        data:dataValues ,
         borderWidth: 0,
-        backgroundColor: ['red','blue','pink','purple'],
-      }]
-    },
-    options: {
+        backgroundColor:['#759BE4','#6200EE','#85CF88','#F7A66B','#CEB0FA','#8133F1','#CEB0FA','#6CAEAE'],
+        barPercentage:0.4,
+      },
+      {
+        data:Array(8).fill([1,100]),
+        borderWidth: 0,
+        backgroundColor:'#F2F4F7',
+        barPercentage:0.4,
+      },
+    ]
+};
+const options= {
+      responsive: true,
+      maintainAspectRatio: 1,
+      plugins: {
+        legend: {
+          display: false
+        },
+        tooltip: {
+          enabled: false,
+        }
+      },
       scales: {
         y: {
-          beginAtZero: true,
+          beginAtZero:true,
+          min:0,
+          max:100,
           ticks: {
-            callback: function(value, index, values) {
+            callback: function(value) {
               return value + '%';
             },
             stepSize: 10,
-            max:100,
-            min: 0
-          }
+            color:"#615E83",
+            font: {
+              size: 9
+            }
+          },
+          border:{
+            dash:[4,4]
+          },
+          stacked: true,
+        },
+        x:{
+          grid: {
+            display: false,
+          },
+          ticks: {
+            color: '#615E83',
+            font: {
+              size: 9
+            }
+          },
+          stacked: true,
         }
       },
-    },
+}
+verticlChartContainer.addEventListener('click',()=>{
+  dataValues=[30, 50, 20,10, 30, 30,30,70];
+  chart.data.datasets[0].data = dataValues; // Update the chart's data on click to chart
+  chart.update(); // Render the updated chart
+  verticlChartImages.forEach(img=>{img.classList.add("vertical-bars-chart-img-opacity")}); // show emojies 
 });
-
-//--------------------End  Vertical line bars animation-------------------
+const chart = new Chart(ctx, {
+  type: 'bar',
+  data: data,
+  options: options,
+});
+//--------------------End  Vertical line bars setup & animation-------------------
 
 //--------------------Question and Languages slider-------------------
 
