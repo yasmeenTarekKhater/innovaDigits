@@ -1,0 +1,191 @@
+/* --------------------- Nav bar styles------------------- */
+.navbar{
+    position: absolute;
+    width: 100%;
+}
+.navbar a{
+    color: white !important;
+}
+.navbar a.active{
+    color: var(--content-accent-ligthblue) !important;
+}
+.navbar img{
+   width: 170px;
+   margin-top: 5px;
+}
+@media(max-width:365px) {
+    .navbar img{
+        width:100px;
+    }
+}
+@media(max-width:992px) {
+    .navbar-collapse{
+        background-color: var(--base-color);
+        padding: 10px;
+        border-radius: 15px;
+        margin-top: 10px;
+        }
+}
+.navbar-collapse ul li{
+    padding: 0 3px;
+}
+.navbar-toggler{
+    background-color: transparent !important;
+    border: 2px solid white !important;
+}
+.navbar button{
+    color: var(--base-color);
+    font-weight: 600;
+    font-size: 16px;
+    padding: 7px 16px;
+    background-color: var(--content-accent-ligthblue);
+    border-radius: 8px;
+}
+.navbar button:hover,.header-btn:hover{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+.navbar .dropdown-menu{
+    background-color: var(--dropdown-color) !important; 
+}
+.navbar .dropdown-menu a{
+    color: black !important;
+    transition: 0.7s;
+ }
+ .features-dropdown{
+     padding: 20px 23px 50px 0px !important;
+     overflow: hidden;
+     width: 25.5rem !important;
+     height: 11.5rem;
+     margin-left: .7vw;
+     border-radius: 0;
+ }
+ @media (max-width:576px) {
+    .features-dropdown{
+        width: 15rem !important;
+        height: 18rem;
+        padding-left: 10px !important;
+    }
+ }
+ .features-dropdown a{
+     color: var(--base-color) !important;
+     font-weight: 500;
+ }
+ .features-dropdown a:hover{
+     background-color: inherit;
+     color: var(--content-accent-purble) !important;
+     font-weight: 700;
+ }
+.default-features img{
+    width: 12rem;
+    position: relative;
+    top: 1vh;
+}
+.general-features img{
+    width: 14rem;
+    position: relative;
+    top: 1vh;
+    right: -.6vw;
+}
+.questions-features img{
+   width: 17.5rem;
+   transform:rotate(-3deg);
+   position: relative;
+   top: 2.7vh;
+   right: -2vw;
+}
+.survey-features img{
+    width: 14rem;
+    position: relative;
+    right: -2vw;
+}
+.show-features-images{
+    display: block;
+}
+.hide-features-images{
+    display: none;
+}
+/* ---------------------End Nav bar styles------------------- */
+/* ---------------------  Free Trail section styles------------------- */
+.free-trail-container{
+    background:var(--base-color) url(../assets/images/Vectorfree.png) no-repeat bottom;
+    background-size:270%;
+    color: white;
+    cursor: pointer;
+    padding: 200px 0;
+    margin-top: 100px;
+    z-index: 2;
+}
+.free-trail-container-small{
+    background-size: 30%;
+}
+.free-trail-shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    background-color: #11023aaf;
+    z-index: -1;
+}
+.free-trail-shadow-transparent{
+    background-color: transparent;
+}
+.free-trail-container-left,.free-trail-container-rigth,.free-trail-shadow,.free-trail-container{
+    transition: 1s;
+}
+.free-trail-container-left-move{
+    transform: translateX(-140%);
+}
+.free-trail-container-rigth-move{
+    transform: translateX(140%);
+}
+.free-trail-container-left h1{
+    font-family: myFont;
+    margin-bottom: 40px;
+    font-weight: 900;
+    font-size: 60px;
+}
+.free-trail-container-left h1 span{
+    color: var(--content-accent-ligthblue);
+}
+.free-trail-container-rigth form{
+    background-color: #170037;
+    border-radius: 16px;
+    padding: 60px;
+}
+.free-trail-container-rigth form input{
+    width: 100%;
+    height: 45px;
+    background-color:rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+}
+.free-trail-container-rigth form button{
+    background-color: var(--content-accent-purble);
+    color: white;
+    border-radius: 13px;
+    padding: 12px 53px;
+}
+@media (max-width:567px) {
+    .free-trail-container-rigth form button{
+        padding: 12px 20px;
+    }
+}
+.free-trail-container-rigth form button:hover{
+    border-color:white;
+    background-color: transparent;
+    color: white;
+}
+/* ---------------------  End Free Trail section styles------------------- */
+
+/* ---------------------  footer section styles------------------- */
+
+footer{
+    background-color: rgba(255, 255, 255, 1);
+}
+footer h6{
+    color: var(--base-color);
+    margin: 5px 0;
+}
+/* ---------------------  End footer section styles------------------- */

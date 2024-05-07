@@ -2,8 +2,6 @@
 //----------add active class to navbar links && changing features image on hover links-------
 const navBarFeaturelinks = document.querySelectorAll('.features-dropdown a');
 const navBarlinks = document.querySelectorAll('.navbar-pages');
-console.log(navBarlinks);
-
 const featuresImages=document.querySelectorAll('.features-dropdown-images');
 
 navBarlinks.forEach(navLink=>{
@@ -37,14 +35,18 @@ navBarFeaturelinks.forEach((link, index) => {
 const freeTrailContainer=document.querySelector(".free-trail-container");
 const freeTrailContent=document.querySelectorAll(".free-trail-content div");
 const freeTrailShadow=document.querySelector(".free-trail-shadow");
-const freeTrailCkasses=["free-trail-container-left-move","free-trail-container-rigth-move"];
+const freeTrailClasses=["free-trail-container-left-move","free-trail-container-rigth-move"];
 
 
 freeTrailContainer.addEventListener('click',function(){
-  freeTrailContent.forEach((content,index)=>{
-    content.classList.toggle(freeTrailCkasses[index]);
-  });
-  freeTrailShadow.classList.toggle("free-trail-shadow-transparent");
-  this.classList.toggle("free-trail-container-small");
+  //handle moving content to left and rigth
+    freeTrailContent.forEach((content,index)=>{
+      content.classList.toggle(freeTrailClasses[index]);
+    });
+
+  //show and remove dark blue shadow
+    freeTrailShadow.classList.toggle("free-trail-shadow-transparent");
+  //changing background image size
+    this.classList.toggle("free-trail-container-small");
 });
 //-----------------------End Free trail section animation in home & general pages-----------------------------------------------------

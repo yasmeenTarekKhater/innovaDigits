@@ -6,7 +6,7 @@ const magicCircleImage=document.querySelector(".magical-circle-img");
 
 // add event click on magicCircle div
 magicCircleContainer.addEventListener('click',()=>{
-      //add and remove class
+      //add and remove class to show and hide magical circle content in rigth side
       magicCircleIcon.classList.toggle("magical-circle-icons-left");
       magicCircleImage.classList.toggle("magical-circle-img-rigth");
 });
@@ -38,7 +38,6 @@ progressBar.addEventListener('click',()=>{
 const barsHorizontalContainer=document.querySelector(".quetion-horizontal-chart-left");
 const progressBarsHorizontal=document.querySelectorAll(".quetion-horizontal-chart-left .progress-bar");
 const progressBarsHorizontalStars=document.querySelector(".quetion-horizontal-chart-left .progress img");
-
 const progressBarsWidth=["progress-bar-horizontal-one","progress-bar-horizontal-two",
 "progress-bar-horizontal-three","progress-bar-horizontal-four","progress-bar-horizontal-five"];
 
@@ -136,10 +135,12 @@ const options= {
       },
 }
 verticlChartContainer.addEventListener('click',()=>{
-  dataValues=[30, 50, 20,10, 30, 30,30,70];
-  chart.data.datasets[0].data = dataValues; // Update the chart's data on click to chart
-  chart.update(); // Render the updated chart
-  verticlChartImages.forEach(img=>{img.classList.add("vertical-bars-chart-img-opacity")}); // show emojies 
+
+    dataValues=[30, 50, 20,10, 30, 30,30,70];
+    chart.data.datasets[0].data = dataValues; // Update the chart's data on click to chart
+    chart.update(); // Render the updated chart
+    verticlChartImages.forEach(img=>{img.classList.add("vertical-bars-chart-img-opacity")}); // show emojies 
+
 });
 const chart = new Chart(ctx, {
   type: 'bar',
@@ -155,13 +156,13 @@ const questionSliderSlides=document.querySelectorAll(".question-languages-slider
 const questionSliderClasses=["question-languages-imgone-rigth","question-languages-imgtwo-left","question-languages-slider-opacity"]
 
 questionSliderArrows.forEach((arrow)=>{
+
     arrow.addEventListener('click',function(){
       //handle slides moving
-      questionSliderSlides[0].classList.toggle(questionSliderClasses[0]);
-      questionSliderSlides[1].classList.toggle(questionSliderClasses[1]);
-      //handle arrows visibality
-      questionSliderArrows[0].classList.toggle(questionSliderClasses[2]);
-      questionSliderArrows[1].classList.toggle(questionSliderClasses[2]);
+      questionSliderSlides.forEach((slide,index)=>slide.classList.toggle(questionSliderClasses[index]));
+      //handle arrows buttons visibality
+      questionSliderArrows.forEach(arrow=>arrow.classList.toggle(questionSliderClasses[2]));
     });
+
 });
 //--------------------End  Question and Languages slider-------------------
