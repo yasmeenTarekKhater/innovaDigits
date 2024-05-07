@@ -1,4 +1,4 @@
-/* -----------first section style------------ */
+/* -----------first section style----------------------------------------------------------- */
 .nav-header{
     position: relative;
     background: linear-gradient(220deg, var(--background-secondary-gradient) 0%, var(--background-primary-gradient) 90%);
@@ -36,6 +36,7 @@
 }
 .navbar-toggler{
     background-color: transparent !important;
+    border: 2px solid white !important;
 }
 .navbar button{
     color: var(--base-color);
@@ -111,6 +112,7 @@
     display: none;
 }
 /* ---------------------End Nav bar styles------------------- */
+/* -----------End first section style-------------------------------------------------------- */
 
 /* ---------------------header styles------------------- */
 .moving-heading{
@@ -793,12 +795,25 @@
 
 /* ---------------------  Question Languages Slider section styles------------------- */
 .question-languages-slider{
+    position: relative;
     background: rgb(97,0,221);
     background: linear-gradient(220deg, var(--background-secondary-gradient) 0%,
     var(--background-primary-gradient) 90%);
     padding: 20px 0;
     overflow: hidden;
     color: white;
+}
+.question-languages-slider-background{
+    position: absolute;
+    width: 60%;
+    right: 4%;
+    top: 10%;
+}
+@media (max-width:1200px) {
+    .question-languages-slider-background{
+        top: 50%;
+        width: 80%;
+    }
 }
 @media (min-width:1400px) {
     .question-languages-slider{
@@ -846,7 +861,6 @@
    transform: translate(-50%,-50%);
 }
 .question-languages-slider-rigth{
-    background: url(../assets/images/Vector.png) no-repeat left center;
     position: relative;
     background-size: 90%;
 }
@@ -864,7 +878,7 @@
     position: absolute;
     width: 50%;
     top: 7%;
-    left:100%;
+    left:106%;
     transition: 1.5s;
 }
 .question-languages-imgtwo-left{

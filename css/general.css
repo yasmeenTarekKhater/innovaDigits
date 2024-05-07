@@ -3,10 +3,43 @@
     background:url(../assets/images/Rectangle\ 3463216.png);
     background-size: cover;
     overflow: hidden;
+    z-index: 3;
+}
+.my-header-general-container .navbar{
+    z-index: 5;
+}
+@media (min-width:1670px) {
+    .my-header-general-container{
+        height: 1140px;
+    }
 }
 .my-header-general{
+    position: relative;
     padding: 200px 0 150px 0;
     color: white;
+    z-index: 2;
+}
+.my-header-general>img{
+    position: absolute;
+    z-index: -1;
+}
+.my-header-general>img:nth-child(1){
+    width: 10% !important;
+    top: 38%;
+}
+.my-header-general>img:nth-child(2){
+    width: 20% !important;
+    top: 33%;
+}
+.my-header-general>img:nth-child(3){
+    width: 27% !important;
+    top: 27%;
+    right: 0;
+}
+@media (max-width:1200px) {
+    .my-header-general>img:nth-child(3){
+        top: 50%;
+    }
 }
 .my-header-general h1,.question-slider-top h1 ,.survey-that-drive-container h1,.make-decision-general-container h2,.elevate-your-insights-container h1{
     font-family: myFont;
@@ -26,7 +59,7 @@
     -webkit-text-fill-color: transparent;
 }
 .my-header-general img:nth-of-type(1){
-    width: 10vw;
+    width: 9vw;
 }
 .my-header-general img:nth-of-type(2){
     width: 24vw;
@@ -41,7 +74,7 @@
 .my-header-general-rigth{
     padding-top: 50px;
     background: url(../assets/images/Create\ a\ survey.png) no-repeat top;
-    background-size: 60% 80%;
+    background-size: 70% 80%;
 }
 /* --------------------------- End header general style------------------------ */
 
@@ -69,7 +102,7 @@
     pointer-events: none;
 }
 .question-slider-slide{
-    background-color:gainsboro;
+    background:linear-gradient(to right,rgba(148, 243, 212, 0.158),rgba(206, 204, 204, 0.171));
     border-radius: 35px;
     width: 78%;
     margin: 0 auto;
@@ -185,21 +218,6 @@
 .make-decision-general-container img{
     width: 2.5vw;
 }
-@media (max-width:992px) {
-    .make-decision-general-container{
-        background-size: 300vw;
-        background-position:top;
-        border-top-left-radius: 24%;
-        border-top-right-radius: 24%;
-    }
-    .make-decision-general-container>img{
-        padding-top: 60px;
-    }
-}
-.make-decision-general-container>img{
-    width: 84vw;
-    margin-top: -4vh;
-}
 .make-decision-general-container h2{
     padding: 30px 0px 4px 0px;
     font-weight: 900;
@@ -251,10 +269,25 @@
     background-color: #00DDD0;
     margin: 0 0 .7vh .4vw;
 }
+.make-decision-general-container>img{
+    width: 100%;
+    margin-top: -4vh;
+}
 .make-decision-general-stars img{
-    width: 20vw;
+    width: 24%;
     margin-right: -95%;
-    margin-top: -20%;
+    margin-top: -18%;
+}
+@media (max-width:992px) {
+    .make-decision-general-container{
+        background-size: 430%;
+        background-position:top;
+        border-radius: 50% 50% 51% 49% / 25% 24% 7% 7%;
+        
+    }
+    .make-decision-general-container>img{
+        padding-top: 60px;
+    }
 }
 /* --------------------------- End Question that make Decision section style------------------------ */
 
@@ -287,6 +320,12 @@
     margin-top: 80px;
     overflow: hidden;
     color: var(--base-color);
+}
+@media (max-width:567px) {
+    .insightful-surveys-container h1{
+        font-size: 36px;
+        margin-left: -60px;
+    }
 }
 .insightful-surveys-slides{
     gap: 36px;

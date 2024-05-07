@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="../css/general.css" />
     <!------------ javascript links --------->
     <script defer src="../js/bootstrap.bundle.min.js"></script>
-    <!-- <script defer src="../js/home.js"></script> -->
     <script defer src="../js/general.js"></script>
+    <script defer src="../js/sharedLogic.js"></script>
+
     <title>Mashoura</title>
 </head>
 <body>
@@ -35,11 +36,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/html/index.html">Home</a>
+                  <a class="nav-link navbar-pages active" aria-current="page" href="/html/index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle navbar-pages"
                     href="#"
                     id="navbarDropdown"
                     role="button"
@@ -103,13 +104,13 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
+                  <a class="nav-link navbar-pages" href="#">Pricing</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link navbar-pages" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link navbar-pages" href="#">Contact Us</a>
                 </li>
               </ul>
   
@@ -135,6 +136,9 @@
           </div>
         </nav>
         <header class="my-header-general">
+          <img src="../assets/images/Rectangle 3463234.png" alt="background line">
+          <img src="../assets/images/Rectangle 3463232.png" alt="background line">
+          <img src="../assets/images/Vector (2).png" alt="background shapes">
           <div class="container">
             <div class="row justify-content-center justify-content-xl-between align-items-center px-2">
             <div class="col-12 col-xl-6">
@@ -215,7 +219,7 @@
       </div>
     </section>
     <section class="container-fluid survey-that-drive-container">
-      <h1>Surveys that Drive <br> Success</h1>
+      <h1 class="text-center text-md-start">Surveys that Drive <br> Success</h1>
       <div class="row  justify-content-center">
         <div class="col-7 col-md-5 survey-that-drive-item mt-4">
             <div class="survey-that-drive-item-img">
@@ -345,7 +349,7 @@
     <section class="container-fluid insightful-surveys-container">
       <div class="row justify-content-center justify-content-md-between align-items-center  question-slider-top insightful-surveys-top">
         <h1 class="col-12 col-md-8">Insightful Surveys: Your <br> Path to Understanding</h1>
-        <div class="col-8  col-md-3 col-lg-2 question-slider-arrows">
+        <div class="col-6  col-md-3 col-lg-2 question-slider-arrows">
           <div class="row justify-content-end justify-content-md-start question-slider-arrows-container insightful-surveys-arrows">
             <div class="col-1 question-slider-arrows-left arrows-opacity">
               <img src="../assets/icons/arrow-left.png" alt="arrow left" />
@@ -394,9 +398,7 @@
           </div>
       </div>
     </section>
-    <section
-      class="container-fluid free-trail-container overflow-hidden position-relative"
-    >
+    <section class="container-fluid free-trail-container overflow-hidden position-relative">
       <div class="row justify-content-center free-trail-content">
         <div class="col-8 col-lg-5 free-trail-container-left">
           <h1>
