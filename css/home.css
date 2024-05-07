@@ -325,6 +325,11 @@
     position: absolute;
     top:280px;
 }
+@media (max-width:567px) {
+    .magical-circle-icons .net-score{
+        width: 120px;
+    }
+}
 .magical-circle-img{
     height: 90%;
     width: 57%;
@@ -334,12 +339,31 @@
     border-radius: 15px;
     transition: 1s;
 }
+@media (min-width:1226px) {
+    .magical-circle-img{
+        right: -6%;
+    }
+    .magical-circle-rigth-content{
+        width: 106%;
+    }
+}
+@media (max-width:1200px) {
+    .magical-circle-img{
+        right: -11%;
+    }
+    .magical-circle-rigth-content{
+        width: 103%;
+    }
+}
+@media (max-width:768px) {
+    .magical-circle-rigth-content{
+        width: 105.4%;
+    }
+}
 .magical-circle-icons-left{
-    transition: 1s;
     transform: translate(-200px);
 }
 .magical-circle-img-rigth{
-    transition: 1s;
     transform: translate(400px) rotate(120deg);
 }
 /* --------------------- End Magical circle styles------------------- */
@@ -499,12 +523,9 @@
     animation:progressBarsHorizintalStars 1s forwards;
 }
 @keyframes progressBarsHorizintalStars {
-    from{
-        opacity: 0;
-    }
     to{
         opacity: 1;
-        left: 48%;
+        left: 49.6%;
     }
 }
 .progress-bar-horizontal-one{
@@ -606,9 +627,9 @@
         border: 1px solid var(--content-accent-purble);
     }
 }
-.pie-chart-container .answer-circle-one,.pie-chart-container .answer-circle-two{
-    width: 17px;
-    height: 17px;
+.answer-circle-one,.answer-circle-two{
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     margin-top: 4px;
 }
@@ -620,6 +641,7 @@
 }
 .pie-chart-numbers p{
     color:#9291A5;
+    font-size: 13px;
 }
 .pie-chart-numbers span{
     color: #1E1B39;
@@ -690,21 +712,26 @@
     position: absolute;
     width: 60px;
     margin: 0 10px;
-    transform: translateY(8px);
+    transform: translateY(16px);
     opacity: 0;
 }
 .vertical-bars-chart-img-opacity{
-    animation: verticalChartAnimation 1.5s forwards;
+    animation: verticalChartAnimation 2s forwards;
 }
 @keyframes verticalChartAnimation {
     to{
         opacity: 1;
-        transform: translateY(-3px);
+        transform: translateY(0px);
+    }
+}
+@media (max-width:992px){
+    .vertical-bars-chart-left img{
+        width: 50px;
     }
 }
 @media (max-width:768px){
     .vertical-bars-chart-left img{
-        width: 50px;
+       display: none;
     }
 }
 .vertical-bars-chart-left img:nth-child(1){
@@ -741,7 +768,15 @@
 }
 @media (min-width:1400px) {
     .vertical-bars-chart-left img:nth-child(n+4):nth-child(-n+8){
-        margin-left: 20px;
+        margin-left: 2.7%;
+    }
+}
+@media (min-width:992px) and (max-width:1200px) {
+    .vertical-bars-chart-left img:nth-child(n+5):nth-child(-n+8){
+        margin-left: 3.6%;
+    }
+    .vertical-bars-chart-left img:nth-child(4){
+        margin-left: 2.5%;
     }
 }
 .much-more{
@@ -761,18 +796,28 @@
     background: rgb(97,0,221);
     background: linear-gradient(220deg, var(--background-secondary-gradient) 0%,
     var(--background-primary-gradient) 90%);
-    height: 650px;
+    padding: 20px 0;
     overflow: hidden;
     color: white;
 }
-/* @media (min-width:1100px) {
+@media (min-width:1400px) {
     .question-languages-slider{
-        overflow: hidden;
+        padding: 140px 0;
     }
-} */
+}
 .question-languages-slider-left,.question-languages-slider-rigth{
     height: 650px;
     padding: 10% 0 30% 7%;
+}
+@media (min-width:900px) and (max-width:1200px) {
+    .question-languages-slider{
+        padding-bottom: 200px;
+    }
+}
+@media (max-width:768px) {
+    .question-languages-slider-left,.question-languages-slider-rigth{
+        height: 550px;
+    }
 }
 .question-languages-slider-left h1{
     font-family: myFont;
@@ -807,7 +852,7 @@
 }
 .question-languages-slider-rigth .question-languages-slider-imgone{
     position: absolute;
-    width: 70%;
+    width: 66%;
     right: 0;
     top: 13.5%;
     transition: 1.5s;
@@ -950,7 +995,7 @@
     padding: 60px;
 }
 .free-trail-container-rigth form input{
-    width: 90%;
+    width: 100%;
     height: 45px;
     background-color:rgba(255, 255, 255, 0.1);
     border: none;
@@ -961,6 +1006,11 @@
     color: white;
     border-radius: 13px;
     padding: 12px 53px;
+}
+@media (max-width:567px) {
+    .free-trail-container-rigth form button{
+        padding: 12px 20px;
+    }
 }
 .free-trail-container-rigth form button:hover{
     border-color:white;
