@@ -10,8 +10,8 @@
     color: var(--content-accent-ligthblue) !important;
 }
 .navbar img{
-   width: 170px;
-   margin-top: 5px;
+    width: 170px;
+    margin-top: 5px;
 }
 @media(max-width:365px) {
     .navbar img{
@@ -33,11 +33,15 @@
     background-color: transparent !important;
     border: 2px solid white !important;
 }
+.navbar .arabic-dropdown{
+    font-size: 13px;
+    font-weight: 300;
+}
 .navbar button{
     color: var(--base-color);
-    font-weight: 600;
-    font-size: 16px;
-    padding: 7px 16px;
+    font-weight: 700;
+    font-size: 12.3px;
+    padding: 10px 19px;
     background-color: var(--content-accent-ligthblue);
     border-radius: 8px;
 }
@@ -52,31 +56,31 @@
 .navbar .dropdown-menu a{
     color: black !important;
     transition: 0.7s;
- }
- .features-dropdown{
-     padding: 20px 23px 50px 0px !important;
-     overflow: hidden;
-     width: 25.5rem !important;
-     height: 11.5rem;
-     margin-left: .7vw;
-     border-radius: 0;
- }
- @media (max-width:576px) {
+}
+.features-dropdown{
+    padding: 20px 23px 50px 0px !important;
+    overflow: hidden;
+    width: 25.5rem !important;
+    height: 11.5rem;
+    margin-left: .7vw;
+    border-radius: 0;
+}
+@media (max-width:576px) {
     .features-dropdown{
         width: 15rem !important;
         height: 18rem;
         padding-left: 10px !important;
     }
- }
- .features-dropdown a{
-     color: var(--base-color) !important;
-     font-weight: 500;
- }
- .features-dropdown a:hover{
-     background-color: inherit;
-     color: var(--content-accent-purble) !important;
-     font-weight: 700;
- }
+}
+.features-dropdown a{
+    color: var(--base-color) !important;
+    font-weight: 500;
+}
+.features-dropdown a:hover{
+    background-color: inherit;
+    color: var(--content-accent-purble) !important;
+    font-weight: 700;
+}
 .default-features img{
     width: 12rem;
     position: relative;
@@ -89,16 +93,15 @@
     right: -.6vw;
 }
 .questions-features img{
-   width: 17.5rem;
-   transform:rotate(-3deg);
-   position: relative;
-   top: 2.7vh;
-   right: -2vw;
+    width: 17.5rem;
+    transform:rotate(-3deg);
+    position: relative;
+    top: 2.7vh;
+    right: -2vw;
 }
 .survey-features img{
     width: 14rem;
     position: relative;
-    right: -2vw;
 }
 .show-features-images{
     display: block;
@@ -152,7 +155,7 @@
 .free-trail-container-rigth form{
     background-color: #170037;
     border-radius: 16px;
-    padding: 60px;
+    padding: 50px;
 }
 .free-trail-container-rigth form input{
     width: 100%;
@@ -160,12 +163,15 @@
     background-color:rgba(255, 255, 255, 0.1);
     border: none;
     border-radius: 8px;
+    padding-left: 25px;
+    margin: 15px 0 30px 0;
 }
 .free-trail-container-rigth form button{
     background-color: var(--content-accent-purble);
     color: white;
+    font-size: 13px;
     border-radius: 13px;
-    padding: 12px 53px;
+    padding: 15px 57px;
 }
 @media (max-width:567px) {
     .free-trail-container-rigth form button{

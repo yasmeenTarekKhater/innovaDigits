@@ -49,8 +49,9 @@
 }
 .my-header-general p{
     color: #D8DEE6;
-    font-size: 20px;
-    font-weight: 100;
+    font-size: 17px;
+    font-family: myFontThin;
+    font-weight: 600;
     line-height: 25px;
 }
 .my-header-general span{
@@ -129,8 +130,10 @@
     margin: 15px 0 43px 0;
 }
 .question-slider-slide-left p{
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 23px;
 }
 .question-slider-slide-left img{
     width: 2.5vw;

@@ -152,8 +152,10 @@ const chart = new Chart(ctx, {
 //--------------------Question and Languages slider-------------------
 
 const questionSliderArrows=document.querySelectorAll(".question-languages-slider-arrows div");
+const questionSliderHeadings=document.querySelectorAll(".question-languages-slider-left-headings h1");
 const questionSliderSlides=document.querySelectorAll(".question-languages-slider-rigth img");
-const questionSliderClasses=["question-languages-imgone-rigth","question-languages-imgtwo-left","question-languages-slider-opacity"]
+const questionSliderClasses=["question-languages-imgone-rigth","question-languages-imgtwo-left",
+      "question-languages-slider-opacity","slider-headings-animation"]
 
 questionSliderArrows.forEach((arrow)=>{
 
@@ -162,6 +164,8 @@ questionSliderArrows.forEach((arrow)=>{
       questionSliderSlides.forEach((slide,index)=>slide.classList.toggle(questionSliderClasses[index]));
       //handle arrows buttons visibality
       questionSliderArrows.forEach(arrow=>arrow.classList.toggle(questionSliderClasses[2]));
+      //handle changeing headings
+      questionSliderHeadings.forEach(heading=>heading.classList.toggle(questionSliderClasses[3]));
     });
 
 });

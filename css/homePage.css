@@ -1,3 +1,7 @@
+/* all p in home page has this font type */
+p{
+    font-family: myFontRegular;
+}
 /* -----------first section style----------------------------------------------------------- */
 .nav-header{
     position: relative;
@@ -74,7 +78,6 @@
 .my-header p{
     font-size: 20px;
 }
-
 @media (max-width:567px){
     .ai-image img{
         width: 200px;
@@ -105,9 +108,11 @@
     height: 57px;
     background-color: white;
     color: var(--base-color);
-    border-radius: 16px;
+    border-radius: 14px;
     font-weight: 600;
-    font-family: myFont;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
     z-index: 4;
 }
 .header-languages{
@@ -151,19 +156,18 @@
     margin-top: 90px;
 }
 .magical-circle h1,.surveying-spectrum-container-rigth h1,.integrate-with-container-top h1{
-   font-family: myfont;
-   font-weight: 900;
-   font-size: 60px;
-   line-height: 63px;
-   color: var(--base-color);
+    font-family: myfont;
+    font-size: 60px;
+    line-height: 63px;
+    color: var(--base-color);
 }
 .magical-circle h1 span,.surveying-spectrum-container-rigth h1 span,.integrate-with-container-top h1 span{
     color: var(--content-accent-purble);
 }
 .magical-circle p,.surveying-spectrum-container-rigth p{
-   margin: 30px 0 0 5px;
-   color: var(--paragraph-color-grayish);
-   font-size: 18.5px;
+    margin: 30px 0 0 5px;
+    color: var(--paragraph-color-grayish);
+    font-size: 18.5px;
 }
 .magical-circle button,.surveying-spectrum-container button{
     background-color: var(--content-accent-purble);
@@ -266,6 +270,19 @@
     background: var(--base-color) url(../assets/images/Vectornkey.png) no-repeat bottom right;
     background-size: 600px;
     color: white;
+    padding: 50px 10px 90px 10px;
+}
+.key-features-top{
+    padding-bottom: 60px;
+}
+.key-features h1{
+    font-family: myfont;
+    font-size: 45px;
+    margin:-35px 0 0-7px;
+}
+.key-features p{
+    width: auto;
+    line-height: 25px;
 }
 .key-features-items div{
     border-radius: 15px;
@@ -313,6 +330,9 @@
 .quetion-progress-bar-left h4,.quetion-horizontal-chart-rigth h4,.pie-chart-left h4,.vertical-bars-chart-rigth h4{
     font-weight: 700;
     color: var(--base-color);
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    line-height: 33px;
 }
 /* ###########rigth side */
 .progress-bar-container{
@@ -395,7 +415,8 @@
 .quetion-horizontal-chart-left{
     background-color: var( --charts-background);
     color: var(--base-color);
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 13px;
     border-radius: 15px;
     padding: 20px 25px;
     cursor: pointer;
@@ -725,11 +746,23 @@
         height: 550px;
     }
 }
+.question-languages-slider-left-headings{
+    position: relative;
+    margin-bottom: 200px;
+}
+.slider-headings-animation{
+    opacity: 0;
+    transition: 1.5s;
+}
 .question-languages-slider-left h1{
+    position: absolute;
     font-family: myFont;
-    font-size: 70px;
+    font-size: 75px;
     line-height: 75px;
-    margin-bottom: 40px;
+}
+.question-languages-slider-left p{
+    font-size: 15.5px;
+    line-height: 28px;
 }
 .question-languages-slider-arrows{
     margin: 40px 0 0 1%;
@@ -780,22 +813,32 @@
 /* ---------------------  Surveying Spectrum section styles------------------- */
 .surveying-spectrum-container{
     height: 50%;
+    margin-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+    background-color:#F3EBFE;
 }
 .surveying-spectrum-container-rigth,.surveying-spectrum-container-left{
-    height: 50%;
+    height: 600px;
 }
 @media (max-width:1030px) {
     .surveying-spectrum-container-rigth h1{
         font-size: 50px;
     }
 }
-.surveying-spectrum-container-left img{
-    width: 112%;
-    height: 100%;
-    margin-left:-4%;
+.surveying-spectrum-container-left{
+    background:url(../assets/images/beautiful-macro-closeup-1.png) no-repeat center;
+    background-size: cover;
 }
 .surveying-spectrum-container-rigth{
-    padding: 7% 6% 0 0;
+    padding:6% 6% 0 0;
+}
+.surveying-spectrum-container-rigth button{
+    font-size: 14px;
+    font-weight: 400;
+}
+.surveying-spectrum-container-rigth p{
+    font-size: 17.7px;
 }
 .surveying-spectrum-small-imgages{
     height: 100%;
